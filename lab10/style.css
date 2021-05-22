@@ -65,7 +65,8 @@ color: #111;
 {
     grid-column: span 2;
      width: 120px;
-    
+     background: #ff3077;
+}
 .calculator span.plus
 {
     grid-row: span 2;

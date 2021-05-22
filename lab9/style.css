@@ -56,3 +56,73 @@ transform: translateY(-50%);
 	width: 900px;
 height: 900px;
 position: absolute;
+top: 0;
+left:0%;
+transform: rotate(0deg);
+
+
+}
+.feature img {
+	width: 70px;
+}
+.feature {
+	position: absolute;
+	display: flex;
+	color: #fff;
+}
+.feature div {
+margin-left: 30px;
+}
+.feature div {
+	margin top: 8px
+}
+.one{
+	top: 450px;
+	right:50px;
+	right :100px;
+}
+.two{
+	top:150px;
+	left:350px;
+}
+.three{
+	bottom:150px;
+	left: 50px;
+}
+.four{
+	bottom: 50px;
+	right: 350px;
+}
+.mobile{
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.controls{
+	position: absolute;
+	right: 10px;
+	top: 50;
+	transform: translateY(-50%);
+	text-align: center;
+
+
+}
+.controls h3{
+	margin: 15px 0;
+	color: #fff;
+	
+}
+#upBtn{
+	width: 15px;
+	cursor: pointer;
+
+}
+	#downBtn{
+	width: 15px;
+	cursor: pointer;
+	transform: rotate(180deg);
+
+}
