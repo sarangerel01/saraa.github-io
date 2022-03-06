@@ -1,0 +1,318 @@
+
+</head> 
+<body style="background-color: red: color: blue: padding: 30px 50px;">
+<div class="info">
+Оройтохоос нь өмнө доорхи нууц үгийг таахыг хичээгээрэй! Та нэг үсэг эсвэл нэг үгийг нэг бүрчлэн тааж болох боловч хэрэв та алвал 2 таамаглалаа алдах болно!</div>
+
+<input type="text" placeholder="Guess">
+
+<button style="display:none;">Play Again</button>
+
+<div class="word"></div>
+
+<div class="hangman"></div>
+
+<span style="position: absolute;bottom:10px; left:10px;">
+
+<div class="guesses Left">Guesses left: <span class="old">10</span></div>
+
+<div class="guessed">Guessed letters: <span class="bold"> </span></div>
+</span>
+<span style="position:absolute;bottom:10px;right:10px;text-align:right;">
+
+<div>Streak: <span class="streak bold">0</span></div>
+
+<div>Average score: <span class="score bold">-</span></div>
+</span>
+</span> <style type="text/css"> {
+
+margin: 0;
+
+}
+
+body {
+
+transition: .2s background;
+
+font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+
+background: rgb(255,0,53);
+background: linear-gradient (135deg, rgba(33,34,176,1) 0%, rgba(255, 0,5
+
+100 );
+
+color: white;
+
+height: 100vh;
+
+}
+
+.bold {
+
+font-weight: bold;
+
+}
+
+.info {
+	font-style: italic;
+
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+
+}
+
+::-webkit-input-placeholder { / Edge /
+
+color: rgba(255, 255, 255, 0.4);
+
+}{
+color: rgba(255, 255, 255, 0.4);
+
+}
+
+::placeholder {
+
+color: rgba(255, 255, 255, 0.4);
+
+}
+
+input, button {
+
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+
+text-align: center;
+
+padding: 10px;
+
+border: none;
+
+border-bottom: 1px solid white;
+
+font-size: 1em;
+
+margin-top: 10px;
+
+background: none;
+
+color: white
+}
+button{
+	background: none;
+
+border-radius: 4px;
+
+padding: 10px 16px;
+
+color: white;
+
+cursor: pointer;
+
+border: 3px solid rgba(255, 255, 255, 0.6);
+
+transition: .2s background
+
+text-transform: uppercase;
+
+
+font-weight: bold;
+
+}
+
+button:hover {
+
+background: rgba(255, 255, 255, 0.1);
+
+}
+
+button:active {
+
+background: rgba(255, 255, 255, 0.3);
+
+}
+
+.word{
+
+
+
+position: absolute;
+
+top: 80%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+display: flex;
+
+max-width: 100vw;
+
+}
+
+.word span {
+
+border-bottom: 2px solid white;
+Youlube
+
+border-bottom:
+
+make a hangman game
+
+2px solid white;
+
+padding: 10px; /* not ideal for long words */
+
+margin: 10px;
+
+width: 30px;
+
+text-align: center;
+
+font-size: 2em;
+
+text-transform: uppercase;
+
+
+
+}
+
+.hangman svg {
+
+position: absolute;
+
+
+top: 50%;
+
+left:  50%;
+
+width: 30vw;
+
+height: 40vh;
+
+transform: translate(-50%, -50%);
+
+}
+
+.hangman line, .hangman circle {
+
+stroke: white;
+}
+.hangman line, .hangman circle{
+stroke-width: 4;
+fill: none;
+{
+
+}
+
+.hangman .draw {
+
+stroke-dasharray: 1000;
+
+stroke-dashoffset: 1000;
+
+animation: dash 2s linear forwards
+}
+@keyframes dash {
+	to{
+
+		stroke-dasharray: 0;
+	}
+}
+
+</style>
+<script type="text/javascript">
+	var word =[
+	'заан',
+	'морь',
+	'үсэг',
+	'хаан',
+	'ямаа',
+	];
+
+	var hangman = [
+	(from: [70, 38], to: [72, 46]},
+
+(from: [70, 38], to: [68, 46]},
+
+(from: [70, 45], to: [72, 55]},
+
+(from: [70, 45], to: [68, 55]},
+
+(from: [70, 35], to: [70, 45]},
+
+(circle: [70, 30], radius: 2},
+
+(from: [70, 5], to: [70, 25]},
+];
+ var stats = {streak: 0, scores: []};
+
+if (typeof (Storage) !== "undefined") {
+
+if (localStorage.hangman !== undefined) {
+
+stats = JSON.parse(localStorage.hangman);
+
+setScore();
+
+}
+
+}
+
+var word, currentword, guesses Left, guessed;
+
+generatework();
+Queue
+
+143
+
+var word, currentword, guesses Left, guessed;
+
+generateWord();
+
+function generateNord() {
+
+currentword [], guessesLeft = 10, guessed = [];
+
+document.querySelector('.guessesLeft').querySelector('span').innerHTML =guessesLeft;
+
+document.querySelector('.guessed').querySelector('span').innerHTML= '';
+
+document.querySelector('input').style.display = null;
+
+document.querySelector("button").style.display='none';
+
+<html>
+  <head>
+    <title>Movie Hangman</title>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="shortcut icon" 
+          <href="https://mitchum.blog/wp-content/uploads/2021/05/favicon.png" />                                                                                                                                                                                                                         
+  </head>
+  <body>
+    <main>
+      <h1>Movie Hangman</h1>
+      <h5><a href="https://mitchum.blog/how-to-build-hangman-with-javascript/">Back To Blog</a></h5>
+      <div id="gallows">
+        <img style="padding-left: 70px" id="hangmanImage" src="img/hangman0.png">
+      </div>
+      <div id="word"></div>
+      <br>
+      <div id="controls">
+        <input type="text" id="guessBox">
+        <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+        <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+        <br>
+        <br>
+        <form action="https://mitchum.blog/sorry-for-offending-subscribe/">
+          <button class="button">How Dare You Make Light Of Capital Punishment</button>
+        </form>
+      </div>
+      <br>
+      <div id="guesses"></div>
+    </main>   
+   <script src="hangman.js"></script>
+  </body>
+</html
+
